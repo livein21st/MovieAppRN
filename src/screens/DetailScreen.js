@@ -1,10 +1,12 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
+import GetData from "../api/api";
 
 export default function DetailScreen() {
   return (
     <View style={styles.container}>
       <Text>DetailScreen</Text>
+      <GetData></GetData>
     </View>
   );
 }

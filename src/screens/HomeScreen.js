@@ -1,12 +1,14 @@
 import React, { Component } from "react";
 import { Text, StyleSheet, View, SafeAreaView } from "react-native";
+import GetData from "../api/GetData";
 import MCard from "../components/mCard/MCard";
 
 export default function HomeScreen({ navigation }) {
   return (
-    <SafeAreaView>
+    <View>
       <MCard navigation={navigation}></MCard>
-    </SafeAreaView>
+      <GetData></GetData>
+    </View>
   );
 }
 
