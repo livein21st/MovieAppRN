@@ -8,6 +8,12 @@ import {
 import React, { useState, useEffect } from "react";
 import { API_URL, API_KEY } from "../utils/constants";
 
+const Item = ({ title }) => (
+  <View style={styles.item}>
+    <Text style={styles.title}>{title}</Text>
+  </View>
+);
+
 export default function GetData() {
   //Data Hook
   const [data, setData] = useState([]);
@@ -18,8 +24,9 @@ export default function GetData() {
     try {
       const response = await fetch(API_URL + API_KEY);
       const data = await response.json();
-      setData(data);
-      console.log(data);
+      setData(data["results"]);
+      return data["results"];
+      // console.log(data);
     } catch (error) {
       console.error(error);
     } finally {
@@ -39,7 +46,11 @@ export default function GetData() {
         <FlatList
           data={data}
           keyExtractor={({ id }, index) => id}
-          renderItem={({ item }) => <Text>{item.results}</Text>}
+          renderItem={({ item }) => (
+            <Text>
+              {item.title}, {item.release_date}
+            </Text>
+          )}
         />
       )}
     </View>
@@ -51,5 +62,8 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
+  },
+  list: {
+    backgroundColor: "red",
   },
 });

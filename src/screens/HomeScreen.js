@@ -1,6 +1,6 @@
-import React, { Component } from "react";
-import { Text, StyleSheet, View, SafeAreaView } from "react-native";
-import GetData from "../api/GetData";
+import React from "react";
+import { StyleSheet, View } from "react-native";
+import GetData from "../services/api";
 import MCard from "../components/mCard/MCard";
 
 export default function HomeScreen({ navigation }) {

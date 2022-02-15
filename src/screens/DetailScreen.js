@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from "react-native";
 import React from "react";
-import GetData from "../api/api";
+import GetData from "../services/api";
 
 export default function DetailScreen() {
   return (

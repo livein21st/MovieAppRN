@@ -1,8 +1,8 @@
-import { StyleSheet } from "react-native";
 import React, { Component, useState, useContext, sta } from "react";
 import { Button, Card, Paragraph } from "react-native-paper";
+import styles from "./styles";
 
-export default function MCard({ navigation }) {
+export default function MCard({ navigation, props }) {
   return (
     <Card style={styles.card}>
       <Card.Cover source={{ uri: "https://picsum.photos/700" }} />
@@ -22,13 +22,3 @@ export default function MCard({ navigation }) {
     </Card>
   );
 }
-
-const styles = StyleSheet.create({
-  card: { margin: 5 },
-  release_date: {},
-  genre: { backgroundColor: "grey", alignContent: "space-between" },
-  details_btn: {
-    flex: 1,
-    alignItems: "center",
-  },
-});
