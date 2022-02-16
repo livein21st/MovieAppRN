@@ -6,7 +6,6 @@ export default function DetailScreen() {
   return (
     <View style={styles.container}>
       <Text>DetailScreen</Text>
-      <GetData></GetData>
     </View>
   );
 }
