@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from "react";
-import { ActivityIndicator, View, FlatList } from "react-native";
-import MCard from "../../components/mCard/MCard";
-import { API_URL, API_KEY } from "../../utils/constants";
-import styles from "./styles";
+import React, { useState, useEffect } from 'react';
+import { ActivityIndicator, View, FlatList } from 'react-native';
+import MCard from '../../components/mCard/MCard';
+import { API_URL, API_KEY } from '../../utils/constants';
+import styles from './styles';
 // import FetchMovieData from "../../services/api";
+
 export default function HomeScreen() {
   //Data Hook
   const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ export default function HomeScreen() {
     try {
       const response = await fetch(uri);
       const data = await response.json();
-      setData(data["results"]);
+      setData(data['results']);
     } catch (error) {
       console.error(error);
     } finally {
