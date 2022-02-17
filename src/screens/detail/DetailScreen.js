@@ -1,10 +1,11 @@
-import { StyleSheet, Image, Text, View } from "react-native";
+import { View } from "react-native";
 import React from "react";
-import { API_POSTER_IMAGE_URL, API_POSTER_SIZES } from "../utils/constants";
-import parseGenreID from "../utils/parseGenre";
-import { Card, Title, Paragraph } from "react-native-paper";
+import { API_POSTER_IMAGE_URL, API_POSTER_SIZES } from "../../utils/constants";
+import parseGenreID from "../../utils/parseGenre";
+import { Card, Paragraph } from "react-native-paper";
+import styles from "../home/styles";
 
-export default function DetailScreen({ route, navigation }) {
+export default function DetailScreen({ route }) {
   const { title, release, cover, genre, poster, overview } = route.params;
 
   return (
@@ -22,7 +23,3 @@ export default function DetailScreen({ route, navigation }) {
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {},
-});

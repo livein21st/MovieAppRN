@@ -1,4 +1,3 @@
-import React from "react";
 import { GENRE } from "./constants";
 
 function parseGenreID(genre_ids) {
