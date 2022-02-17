@@ -7,6 +7,7 @@ import {
   GENRE,
 } from "../../utils/constants";
 import { useNavigation } from "@react-navigation/native";
+import parseGenreID from "../../utils/parseGenre";
 
 export default function MCard({
   title,
@@ -18,19 +19,17 @@ export default function MCard({
 }) {
   const navigation = useNavigation();
 
-  function parseGenreID(genre_ids) {
-    let genresHash = {};
-    for (let i in GENRE) {
-      genresHash[GENRE[i]["id"]] = GENRE[i]["name"];
-    }
-    let genres = "";
-    for (let i in genre_ids) {
-      genres += genresHash[genre_ids[i]] + " ";
-    }
-    // this.dataNow.genres = genres;
-    console.log(genres);
-    return genres;
-  }
+  // function parseGenreID(genre_ids) {
+  //   let genresHash = {};
+  //   for (let i in GENRE) {
+  //     genresHash[GENRE[i]["id"]] = GENRE[i]["name"];
+  //   }
+  //   let genres = "";
+  //   for (let i in genre_ids) {
+  //     genres += genresHash[genre_ids[i]] + " ";
+  //   }
+  //   return genres;
+  // }
 
   return (
     <Card
@@ -39,7 +38,7 @@ export default function MCard({
         navigation.navigate("Details", {
           title: title,
           poster,
-          genre_ids,
+          genre,
           overview,
           release,
         })
