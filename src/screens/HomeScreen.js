@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ActivityIndicator, View, FlatList, StyleSheet } from "react-native";
 import MCard from "../components/mCard/MCard";
-import { API_URL, API_KEY } from "../utils/constants";
+import { API_URL, API_KEY, GENRE } from "../utils/constants";
 
 export default function HomeScreen({ navigation }) {
   //Data Hook
@@ -26,16 +26,20 @@ export default function HomeScreen({ navigation }) {
   }, []);
 
   const renderItem = ({ item }) => (
-    <MCard
-      title={item.title}
-      release={item.release_date}
-      image={item.backdrop_path}
-      genre={item.genre_ids}
-    />
+    <View style={{ paddingBottom: 10 }}>
+      <MCard
+        title={item.title}
+        release={item.release_date}
+        cover={item.backdrop_path}
+        genre={item.genre_ids}
+        poster={item.poster_path}
+        overview={item.overview}
+      />
+    </View>
   );
 
   return (
-    <View style={{ flex: 1, padding: 24 }}>
+    <View style={{ flex: 1, padding: 20, alignContent: "space-between" }}>
       {isLoading ? (
         <ActivityIndicator />
       ) : (

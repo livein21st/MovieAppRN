@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Card, Paragraph, Text } from "react-native-paper";
+import { Button, Card, Paragraph } from "react-native-paper";
 import styles from "./styles";
 import {
   API_POSTER_IMAGE_URL,
@@ -8,43 +8,52 @@ import {
 } from "../../utils/constants";
 import { useNavigation } from "@react-navigation/native";
 
-export default function MCard({ title, release, image, genre_ids }) {
+export default function MCard({
+  title,
+  release,
+  cover,
+  genre,
+  poster,
+  overview,
+}) {
   const navigation = useNavigation();
 
-  function parseGenreID(_genre_ids) {
-    console.log("id " + _genre_ids);
-    let genres = [];
-    for (let j in _genre_ids) {
-      for (let i in GENRE) {
-        if (j == GENRE[i]["id"]) {
-          console.log(GENRE[i]["name"]);
-          genres += GENRE[i]["name"];
-        } else console.log("No Genre Found");
-      }
+  function parseGenreID(genre_ids) {
+    let genresHash = {};
+    for (let i in GENRE) {
+      genresHash[GENRE[i]["id"]] = GENRE[i]["name"];
     }
-    // console.log(genres);
+    let genres = "";
+    for (let i in genre_ids) {
+      genres += genresHash[genre_ids[i]] + " ";
+    }
+    // this.dataNow.genres = genres;
+    console.log(genres);
     return genres;
   }
 
   return (
-    <Card style={styles.card}>
+    <Card
+      style={styles.card}
+      onPress={() =>
+        navigation.navigate("Details", {
+          title: title,
+          poster,
+          genre_ids,
+          overview,
+          release,
+        })
+      }
+    >
       <Card.Cover
-        style={styles.poster}
-        source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[5] + image }}
+        style={styles.cover}
+        source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[5] + cover }}
       />
       <Card.Title title={title} />
       <Card.Content>
         <Paragraph style={styles.release_date}>Release on: {release}</Paragraph>
-        <Paragraph style={styles.genre}>{parseGenreID(genre_ids)}</Paragraph>
+        <Paragraph style={styles.genre}>Genre: {parseGenreID(genre)}</Paragraph>
       </Card.Content>
-      <Card.Actions>
-        <Button
-          style={styles.details_btn}
-          onPress={() => navigation.navigate("Details")}
-        >
-          More Details
-        </Button>
-      </Card.Actions>
     </Card>
   );
 }
