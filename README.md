@@ -1,5 +1,4 @@
 <p align="center">
-  <img alt="Cine: The Movie Guide" src="./app/assets/images/icon.png" height="85" width="85" />
   <h3 align="center">MovieApp RN: The Upcoming Movie Guide</h3>
 </p>
 
@@ -7,11 +6,10 @@
 
 [![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)](https://expo.io/@murillo94/cine-the-movie-guide)
 [![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)](https://expo.io/@murillo94/cine-the-movie-guide)
-[![supports web](https://img.shields.io/badge/web-4630EB.svg?style=flat-square&logo=GOOGLE-CHROME&labelColor=4285F4&logoColor=fff)](https://cine-the-guide-movie.vercel.app/)
 
 Cine is your movie guide. The fastest and easiest way to look for upcoming Movieson your device.
 
-![Cine: The Movie Guide](./resources/demo.png)
+<!-- ![Cine: The Movie Guide](./resources/demo.png) -->
 
 ## Architecture
 
