@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { ActivityIndicator, View, FlatList } from 'react-native';
 import MCard from '../../components/mCard/MCard';
 import { API_URL, API_KEY } from '../../utils/constants';
-import styles from './styles';
+import { styles } from './styles';
 // import FetchMovieData from "../../services/api";
 
 export default function HomeScreen() {

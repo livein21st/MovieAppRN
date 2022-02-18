@@ -5,6 +5,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center'
-  },
-  cardList: { flex: 1, padding: 10, alignContent: 'space-between' }
+  }
 });
+
+export { styles };

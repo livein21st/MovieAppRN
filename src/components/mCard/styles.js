@@ -1,9 +1,11 @@
-import { StyleSheet } from "react-native";
+import { StyleSheet } from 'react-native';
 
 const styles = StyleSheet.create({
-  card: { margin: 10, paddingTop: 100 },
+  card: { margin: 10 },
   release_date: {},
-  title: { color: "black" },
-  cover: { width: 150, height: 400 },
-  genre: { color: "black" },
+  title: { color: 'black' },
+  // cover: { width: 150, height: 400 },
+  genre: { color: 'black' }
 });
+
+export { styles };
