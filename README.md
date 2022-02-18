@@ -7,7 +7,7 @@
 [![supports iOS](https://img.shields.io/badge/iOS-4630EB.svg?style=flat-square&logo=APPLE&labelColor=999999&logoColor=fff)](https://expo.io/@murillo94/cine-the-movie-guide)
 [![supports Android](https://img.shields.io/badge/Android-4630EB.svg?style=flat-square&logo=ANDROID&labelColor=A4C639&logoColor=fff)](https://expo.io/@murillo94/cine-the-movie-guide)
 
-Cine is your movie guide. The fastest and easiest way to look for upcoming Movieson your device.
+The MovieApp is your upcoming movie guide. The fastest and easiest way to look for upcoming Movieson your device.
 
 <!-- ![Cine: The Movie Guide](./resources/demo.png) -->
 
