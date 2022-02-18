@@ -28,7 +28,7 @@ export default function HomeScreen() {
   }, []);
 
   const renderItem = ({ item }) => (
-    <View style={{ paddingBottom: 10 }}>
+    <View>
       <MCard
         title={item.title}
         release={item.release_date}
@@ -39,7 +39,9 @@ export default function HomeScreen() {
       />
     </View>
   );
-
+  loadMore = () => {
+    alert('You Got to end');
+  };
   return (
     <View style={styles.cardList}>
       {isLoading ? (
@@ -47,8 +49,9 @@ export default function HomeScreen() {
       ) : (
         <FlatList
           data={data}
-          keyExtractor={({ id }, index) => id}
+          keyExtractor={({ id }) => id}
           renderItem={renderItem}
+          maxToRenderPerBatch={0}
         />
       )}
     </View>

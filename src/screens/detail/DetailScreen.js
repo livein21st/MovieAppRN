@@ -12,12 +12,12 @@ export default function DetailScreen({ route }) {
     <View style={styles.container}>
       <Card>
         <Card.Cover
-          source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[4] + poster }}
+          source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[4] + cover }}
         />
       </Card>
       <Card.Title title={title} subtitle={parseGenreID(genre)} />
       <Card.Content>
-        <Paragraph>{release}</Paragraph>
+        <Paragraph>Release On: {release}</Paragraph>
         <Paragraph>{overview}</Paragraph>
       </Card.Content>
     </View>

@@ -23,7 +23,8 @@ export default function MCard({
           poster,
           genre,
           overview,
-          release
+          release,
+          cover
         })
       }
     >
