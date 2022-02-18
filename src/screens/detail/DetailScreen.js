@@ -3,7 +3,7 @@ import React from 'react';
 import { API_POSTER_IMAGE_URL, API_POSTER_SIZES } from '../../utils/constants';
 import parseGenreID from '../../utils/parseGenre';
 import { Card, Paragraph } from 'react-native-paper';
-import { styles } from '../home/styles';
+import { styles } from './styles';
 
 export default function DetailScreen({ route }) {
   const { title, release, cover, genre, poster, overview } = route.params;

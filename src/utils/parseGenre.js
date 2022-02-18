@@ -1,13 +1,13 @@
-import { GENRE } from "./constants";
+import { GENRE } from './constants';
 
 function parseGenreID(genre_ids) {
   let genresHash = {};
   for (let i in GENRE) {
-    genresHash[GENRE[i]["id"]] = GENRE[i]["name"];
+    genresHash[GENRE[i]['id']] = GENRE[i]['name'];
   }
-  let genres = "";
+  let genres = [''];
   for (let i in genre_ids) {
-    genres += genresHash[genre_ids[i]] + " ";
+    genres += genresHash[genre_ids[i]] + ' ';
   }
   return genres;
 }
