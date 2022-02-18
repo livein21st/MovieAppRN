@@ -13,7 +13,7 @@ The MovieApp is your upcoming movie guide. The fastest and easiest way to look f
 
 ## Architecture
 
-Cine was built to run on iOS, Android. It uses [React Native CLI](https://reactnative.dev/docs/environment-setup) as a core lib to build and distribute to all the platforms.
+The app was built to run on iOS, Android. It uses [React Native CLI](https://reactnative.dev/docs/environment-setup) as a core lib to build and distribute to all the platforms.
 
 ### Libs
 
