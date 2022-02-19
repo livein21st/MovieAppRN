@@ -18,7 +18,10 @@ The app was built to run on iOS, Android. It uses [React Native CLI](https://rea
 ### Libs
 
 - [react-navigation](https://github.com/react-navigation/react-navigation)
+  - [react-navigation/bottom-tabs](https://reactnavigation.org/docs/tab-based-navigation)
+  - [react-navigation/native-stack](https://reactnavigation.org/docs/hello-react-navigation)
 - [react-native-paper](https://callstack.github.io/react-native-paper/index.html)
+- [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons/)
 
 ### APIs
 
@@ -43,7 +46,8 @@ As others projects, you will need some requirements to run:
 #### Easy explore the app on Expo Go app on mobile
 
 - [DownloadExpoGoAppMobile](https://expo.dev/client)
-  ![Scan QR-CODE](./assets/appQR.png)
+- ![Scan QR-CODE]
+  (./assets/appQR.png)
 
 ## TBD
 

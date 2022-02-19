@@ -32,12 +32,6 @@ export default function App() {
   };
 
   return (
-    // <NavigationContainer>
-    //   <Stack.Navigator initialRouteName="Home">
-    //     <Stack.Screen name="Upcoming Movies" component={HomeScreen} />
-    //     <Stack.Screen name="Details" component={Details} />
-    //   </Stack.Navigator>
-    // </NavigationContainer>
     <NavigationContainer>
       <Tab.Navigator
         initialRouteName="Home"
@@ -52,8 +46,6 @@ export default function App() {
             } else if (route.name === "Search") {
               iconName = focused ? "ios-search" : "ios-search";
             }
-
-            // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
           tabBarActiveTintColor: "tomato",
