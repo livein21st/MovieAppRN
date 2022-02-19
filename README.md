@@ -41,7 +41,6 @@ As others projects, you will need some requirements to run:
 - `npm install`
 - `cd ios`
 - `cd pod install`
-- `react-native link react-native-vector-icons`
 - `npx react-native start`
 
 Now, you can choose a command to run the project:
