@@ -22,6 +22,15 @@ const Tab = createBottomTabNavigator();
 Ionicons.loadFont();
 
 export default function App() {
+  const HomescreenNavigator = () => {
+    return (
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Upcoming Movies" component={HomeScreen} />
+        <Stack.Screen name="Details" component={Details} />
+      </Stack.Navigator>
+    );
+  };
+
   return (
     // <NavigationContainer>
     //   <Stack.Navigator initialRouteName="Home">
@@ -53,7 +62,7 @@ export default function App() {
           tabBarInactiveTintColor: 'gray'
         })}
       >
-        <Tab.Screen name="Home" component={HomeScreen} />
+        <Tab.Screen name="Home" component={HomescreenNavigator} />
         <Tab.Screen name="Search" component={SearchScreen} />
         <Tab.Screen name="Settings" component={SettingScreen} />
       </Tab.Navigator>
