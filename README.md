@@ -32,11 +32,16 @@ As others projects, you will need some requirements to run:
 
 - [Node.js](https://nodejs.org/) (latest)
 - [ReactNative](https://reactnative.dev/docs/environment-setup)
+  - [Xcode]
+  - [Cocapads]
 
 #### How to run
 
 - `git clone https://github.com/livein21st/MovieAppRN.git`
 - `npm install`
+- `cd ios`
+- `cd pod install`
+- `react-native link react-native-vector-icons`
 - `npx react-native start`
 
 Now, you can choose a command to run the project:
