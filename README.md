@@ -31,19 +31,21 @@ As others projects, you will need some requirements to run:
 #### Requirements
 
 - [Node.js](https://nodejs.org/) (latest)
-- [ReactNative](https://reactnative.dev/docs/environment-setup)
-  - [Xcode]
-  - [Cocapads]
+- [ReactNativeExpo](https://reactnative.dev/docs/environment-setup) -`npm install --global expo-cli`
+- [Xcode For running on Simulator]
 
 #### How to run
 
 - `git clone https://github.com/livein21st/MovieAppRN.git`
 - `npm install`
-- `cd ios`
-- `cd pod install`
-- `npx react-native start`
+- `expo start`
 
-Now, you can choose a command to run the project:
+#### Easy explore the app on Expo Go app on mobile
 
-- `npx react-native run-ios` to run on iOS simulator
-- `npx react-native run-android` to run on Android simulator
+- [DownloadExpoGoAppMobile](https://expo.dev/client)
+  ![Scan QR-CODE](./assets/appQR.png)
+
+## TBD
+
+- Further implementation of api.js for fetching more than one page of upcoing movie list
+- Search qeury request in the api
