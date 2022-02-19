@@ -4,7 +4,7 @@ import { styles } from './styles';
 
 export default function SettingScreen() {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>SettingScreen</Text>
     </View>
   );
