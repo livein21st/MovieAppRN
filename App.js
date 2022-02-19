@@ -6,16 +6,16 @@
  * @flow strict-local
  */
 
-import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-import HomeScreen from './src/screens/home/HomeScreen';
-import Details from './src/screens/detail/DetailScreen';
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import SearchScreen from './src/screens/search/SearchScreen';
-import SettingScreen from './src/screens/settings/SettingScreen';
-import Ionicons from 'react-native-vector-icons/Ionicons';
+import React, { Component } from "react";
+import { StyleSheet } from "react-native";
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import HomeScreen from "./src/screens/home/HomeScreen";
+import Details from "./src/screens/detail/DetailScreen";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import SearchScreen from "./src/screens/search/SearchScreen";
+import SettingScreen from "./src/screens/settings/SettingScreen";
+import Ionicons from "react-native-vector-icons/Ionicons";
 
 const Stack = createNativeStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -45,21 +45,19 @@ export default function App() {
           tabBarIcon: ({ focused, color, size }) => {
             let iconName;
 
-            if (route.name === 'Home') {
-              iconName = focused
-                ? 'ios-information-circle'
-                : 'ios-information-circle-outline';
-            } else if (route.name === 'Settings') {
-              iconName = focused ? 'ios-list-box' : 'ios-list';
-            } else if (route.name === 'Search') {
-              iconName = focused ? 'ios-search' : 'ios-search';
+            if (route.name === "Home") {
+              iconName = focused ? "ios-home" : "ios-home-outline";
+            } else if (route.name === "Settings") {
+              iconName = focused ? "ios-list" : "ios-list-outline";
+            } else if (route.name === "Search") {
+              iconName = focused ? "ios-search" : "ios-search";
             }
 
             // You can return any component that you like here!
             return <Ionicons name={iconName} size={size} color={color} />;
           },
-          tabBarActiveTintColor: 'tomato',
-          tabBarInactiveTintColor: 'gray'
+          tabBarActiveTintColor: "tomato",
+          tabBarInactiveTintColor: "gray",
         })}
       >
         <Tab.Screen name="Home" component={HomescreenNavigator} />
