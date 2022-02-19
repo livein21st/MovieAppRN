@@ -46,8 +46,7 @@ As others projects, you will need some requirements to run:
 #### Easy explore the app on Expo Go app on mobile
 
 - [DownloadExpoGoAppMobile](https://expo.dev/client)
-- ![Scan QR-CODE]
-  (./assets/appQR.png)
+- ![Scan QR-CODE](./assets/appQR.png)
 
 ## TBD
 
