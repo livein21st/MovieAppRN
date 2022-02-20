@@ -45,6 +45,9 @@ As others projects, you will need some requirements to run:
 #### How to run
 
 - `git clone https://github.com/livein21st/MovieAppRN.git`
+
+Go indise dthe project foler and Run:
+
 - `npm install`
 - `expo start`
 
@@ -54,7 +57,7 @@ As others projects, you will need some requirements to run:
 
 Scan the QR Code to Run the App
 
-![Scan QR-CODE]("./assets/appQR.png" width="400" height="400")
+<img src="./assets/appQR.png" width="200">
 
 ## TBD
 
