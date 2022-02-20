@@ -9,7 +9,7 @@
 
 The MovieApp is your upcoming movie guide. The fastest and easiest way to look for upcoming Movieson your device.
 
-![The MovieApp](./assets/demo1.png | width="400" height="900" ) ![The MovieApp](./assets/demo2.png | width="400" height="900")
+![The MovieApp]("./assets/demo1.png" width="400" height="900" ) ![The MovieApp]("./assets/demo2.png" width="400" height="900")
 
 ## Architecture
 
@@ -54,7 +54,7 @@ As others projects, you will need some requirements to run:
 
 Scan the QR Code to Run the App
 
-![Scan QR-CODE](./assets/appQR.png | width="400" height="400")
+![Scan QR-CODE]("./assets/appQR.png" width="400" height="400")
 
 ## TBD
 
