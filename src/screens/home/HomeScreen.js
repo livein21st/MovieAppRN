@@ -3,7 +3,6 @@ import { ActivityIndicator, View, FlatList, Alert } from "react-native";
 import MCard from "../../components/mCard/MCard";
 import { API_URL, API_KEY } from "../../utils/constants";
 import { styles } from "./styles";
-// import FetchMovieData from "../../services/api";
 
 let TOTAL_PAGE = 0;
 let CURR_PAGE = 1;
@@ -21,7 +20,6 @@ export default function HomeScreen() {
     try {
       const response = await fetch(uri + CURR_PAGE);
       const data = await response.json();
-      console.log("Total Page: " + data["total_pages"]);
       setData([...data["results"]]);
     } catch (error) {
       console.error(error);

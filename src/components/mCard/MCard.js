@@ -1,9 +1,9 @@
-import React from 'react';
-import { Card, Paragraph } from 'react-native-paper';
-import { styles } from './styles';
-import { API_POSTER_IMAGE_URL, API_POSTER_SIZES } from '../../utils/constants';
-import { useNavigation } from '@react-navigation/native';
-import parseGenreID from '../../utils/parseGenre';
+import React from "react";
+import { Card, Paragraph } from "react-native-paper";
+import { styles } from "./styles";
+import { API_POSTER_IMAGE_URL, API_POSTER_SIZES } from "../../utils/constants";
+import { useNavigation } from "@react-navigation/native";
+import parseGenreID from "../../utils/parseGenre";
 
 export default function MCard({
   title,
@@ -11,26 +11,26 @@ export default function MCard({
   cover,
   genre,
   poster,
-  overview
+  overview,
 }) {
   const navigation = useNavigation();
   return (
     <Card
       style={styles.card}
       onPress={() =>
-        navigation.navigate('Details', {
+        navigation.navigate("Details", {
           title: title,
           poster,
           genre,
           overview,
           release,
-          cover
+          cover,
         })
       }
     >
       <Card.Cover
         style={styles.cover}
-        source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[5] + cover }}
+        source={{ uri: API_POSTER_IMAGE_URL + API_POSTER_SIZES[5] + poster }}
       />
       <Card.Title title={title} />
       <Card.Content>
