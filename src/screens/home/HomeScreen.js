@@ -57,17 +57,6 @@ export default function HomeScreen() {
     }
   };
 
-  const handOnScrollTop = async () => {
-    CURR_PAGE -= 1;
-    console.log("New CUR " + CURR_PAGE);
-    if (!stopFetchMore) {
-      const response = await fetch(uri + CURR_PAGE);
-      const resdata = await response.json();
-      if (resdata["total_pages"] === 1) return;
-      setData([...data, ...resdata["results"]]);
-    }
-  };
-
   return (
     <View style={styles.cardList}>
       {isLoading ? (
@@ -78,11 +67,10 @@ export default function HomeScreen() {
           keyExtractor={({ id, index }) => id}
           renderItem={renderItem}
           onEndReached={handleOnEndReached}
-          onEndReachedThreshold={0.01}
+          onEndReachedThreshold={0.5}
           onScrollBeginDrag={() => {
             stopFetchMore = false;
           }}
-          onScrollToTop={handOnScrollTop}
         />
       )}
     </View>
