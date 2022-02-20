@@ -9,7 +9,7 @@
 
 The MovieApp is your upcoming movie guide. The fastest and easiest way to look for upcoming Movieson your device.
 
-![The MovieApp]("./assets/demo1.png" width="400" height="900" ) ![The MovieApp]("./assets/demo2.png" width="400" height="900")
+![The MovieApp](./assets/demo.png)
 
 ## Architecture
 
