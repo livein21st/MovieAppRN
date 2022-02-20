@@ -9,19 +9,25 @@
 
 The MovieApp is your upcoming movie guide. The fastest and easiest way to look for upcoming Movieson your device.
 
-<!-- ![Cine: The Movie Guide](./resources/demo.png) -->
+![The MovieApp](./assets/demo1.png) ![The MovieApp](./assets/demo2.png)
 
 ## Architecture
 
-The app was built to run on iOS, Android. It uses [React Native CLI](https://reactnative.dev/docs/environment-setup) as a core lib to build and distribute to all the platforms.
+This App utilizes Expo for development. To get started please install the following:
 
-### Libs
+`$ npm install expo-cli --global`
+
+You may also need an [Expo account](https://expo.io/signup) to use the **Expo Client** for [iOS](https://apps.apple.com/app/apple-store/id982107779) and [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www).
+
+\*\*\*Note: This project specifically targets iOS at this time.
+
+### Libs used during the development
 
 - [react-navigation](https://github.com/react-navigation/react-navigation)
   - [react-navigation/bottom-tabs](https://reactnavigation.org/docs/tab-based-navigation)
   - [react-navigation/native-stack](https://reactnavigation.org/docs/hello-react-navigation)
 - [react-native-paper](https://callstack.github.io/react-native-paper/index.html)
-- [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons/)
+- [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons
 
 ### APIs
 
@@ -34,7 +40,6 @@ As others projects, you will need some requirements to run:
 #### Requirements
 
 - [Node.js](https://nodejs.org/) (latest)
-- [ReactNativeExpo](https://reactnative.dev/docs/environment-setup) -`npm install --global expo-cli`
 - [Xcode For running on Simulator]
 
 #### How to run
