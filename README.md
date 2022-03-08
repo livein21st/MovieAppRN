@@ -19,7 +19,7 @@ This App utilizes Expo for development. To get started please install the follow
 
 You may also need an [Expo account](https://expo.io/signup) to use the **Expo Client** for [iOS](https://apps.apple.com/app/apple-store/id982107779) and [Android](https://play.google.com/store/apps/details?id=host.exp.exponent&referrer=www).
 
-\*\*\*Note: This project specifically targets iOS at this time.
+** Note: This project specifically targets iOS at this time. **
 
 ### Libs used during the development
 
@@ -27,7 +27,7 @@ You may also need an [Expo account](https://expo.io/signup) to use the **Expo Cl
   - [react-navigation/bottom-tabs](https://reactnavigation.org/docs/tab-based-navigation)
   - [react-navigation/native-stack](https://reactnavigation.org/docs/hello-react-navigation)
 - [react-native-paper](https://callstack.github.io/react-native-paper/index.html)
-- [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons
+- [react-native-vector-icons](https://oblador.github.io/react-native-vector-icons)
 
 ### APIs
 
@@ -40,13 +40,13 @@ As others projects, you will need some requirements to run:
 #### Requirements
 
 - [Node.js](https://nodejs.org/) (latest)
-- [Xcode For running on Simulator]
+- Xcode For running on Simulator
 
 #### How to run
 
 - `git clone https://github.com/livein21st/MovieAppRN.git`
 
-Go indise dthe project foler and Run:
+Go indised the project foler and Run:
 
 - `npm install`
 - `expo start`
@@ -59,7 +59,9 @@ Scan the QR Code to Run the App
 
 <img src="./assets/appQR.png" width="200">
 
-## TBD
+## To-Do
 
-- Further implementation of api.js for fetching more than one page of upcoing movie list
-- Search qeury request in the api
+- Further implementation of api.js.
+  - Search query request in the api
+  - sort movie list based on the date
+- Redux implementation to retrieve the data.
